@@ -52,7 +52,7 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 html_theme = "cloud"
 html_logo = "_static/logo.png"
 html_short_title = "Python Script in Jupiter"
-
+scv_show_banner = True
 # Material theme options (see theme.conf for more information)
 html_theme_options = {
     "roottarget": "get_started",

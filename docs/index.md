@@ -1,4 +1,4 @@
-# Python Script in Jupiter (PSJ)
+# Python Script in Jupiter (PSJ) v4.1.4
 
 Learn the basics and discover the customizaton tool.
 
