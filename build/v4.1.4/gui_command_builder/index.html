@@ -1,0 +1,415 @@
+
+
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GUI Command Builder &#8212; Python Scritping in Jupiter  documentation</title>
+    <link rel="stylesheet" href="../_static/cloud.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx_tabs/semantic-ui-2.4.1/segment.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx_tabs/semantic-ui-2.4.1/menu.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx_tabs/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/banner.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/stylesheets/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/spanels-index--0afa1ebdab0bb23b98b56d34c23d9f57.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/spanels-bootstrap-index--5fd3999ee7762ccc51105388f4a9d115.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/spanels-variables--ffc7f74dcb1b9eecba2dbcbc22818714.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/table_styling.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text:400,i,b,bi|Open+Sans:400,i,b,bi|Roboto+Mono:400,i,b,bi&amp;display=swap" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/thebelab-helper.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+
+    
+    
+     
+        <script src="../_static/jquery.cookie.js"></script>
+    
+
+    
+     
+        <script src="../_static/cloud.base.js"></script>
+    
+
+    
+     
+        <script src="../_static/cloud.js"></script>
+    
+
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Component and Parameter" href="component/index.html" />
+    <link rel="prev" title="File Launcher" href="../file_launcher.html" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head><body>
+    <div class="relbar-top">
+        
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../index.html" title="Table Of Contents"
+             accesskey="C">toc</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="component/index.html" title="Component and Parameter"
+             accesskey="N">next</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="../file_launcher.html" title="File Launcher"
+             accesskey="P">previous</a> &nbsp; &nbsp;</li>
+    <li><a href="../get_started.html">Python Script in Jupiter</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href="">GUI Command Builder</a></li> 
+      </ul>
+    </div>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  
+
+
+    
+    
+
+
+
+    <p class="scv-banner"><b>Warning:</b> This document is for the development version of Python Scritping in Jupiter.</p>
+<div class="section" id="gui-command-builder">
+<h1>GUI Command Builder<a class="headerlink" href="#gui-command-builder" title="Permalink to this headline">¶</a></h1>
+<p>GUI Command Builder is an interactive builder of PSJ-GUI, help making Jupiter dialog or wizard by drag and drop operations. User hence does not need to know Python programming language to make UI components in Jupiter.</p>
+<div class="section" id="tool-menu">
+<h2>Tool Menu<a class="headerlink" href="#tool-menu" title="Permalink to this headline">¶</a></h2>
+<p>Perform operations related to the creation of dialogs and wizards.</p>
+<p><img alt="Tool menu" src="../_images/GUI_CommandBuilder_MenuWindow_ToolMenu.png" /></p>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>Icon</p></th>
+<th class="text-align:left head"><p>Name</p></th>
+<th class="text-align:left head"><p>Description</p></th>
+<th class="text-align:center head"><p>Shortcut Key</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><img alt="New icon" src="../_images/New.png" /></p></td>
+<td class="text-align:left"><p>Make a new dialog</p></td>
+<td class="text-align:left"><p>Clear the being created settings and open a new environment</p></td>
+<td class="text-align:center"><p><span class="sphinx-bs badge badge-dark badge-pill">F5</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><img alt="Open icon" src="../_images/Open.png" /></p></td>
+<td class="text-align:left"><p>Open an existing database</p></td>
+<td class="text-align:left"><p>Open and load a database file</p></td>
+<td class="text-align:center"><p><span class="sphinx-bs badge badge-dark badge-pill">F4</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p><img alt="Save icon" src="../_images/Save.png" /></p></td>
+<td class="text-align:left"><p>Save dialog settings to database</p></td>
+<td class="text-align:left"><p>Save the being created dialoge settings to an external database file</p></td>
+<td class="text-align:center"><p><span class="sphinx-bs badge badge-dark badge-pill">F6</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><img alt="Undo icon" src="../_images/Undo.png" /></p></td>
+<td class="text-align:left"><p>Undo</p></td>
+<td class="text-align:left"><p>Click this icon to undo the previously executed operation</p></td>
+<td class="text-align:center"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p><img alt="Redo icon" src="../_images/Redo.png" /></p></td>
+<td class="text-align:left"><p>Redo</p></td>
+<td class="text-align:left"><p>Click this icon to redo the previously cancelled operation</p></td>
+<td class="text-align:center"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><img alt="Show/Hide code icon" src="../_images/Show_hide.png" /></p></td>
+<td class="text-align:left"><p>Show or hide code window</p></td>
+<td class="text-align:left"><p>Switch showing or hiding the code window</p></td>
+<td class="text-align:center"><p><span class="sphinx-bs badge badge-dark badge-pill">F1</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p><img alt="Preview icon" src="../_images/Preview.png" /></p></td>
+<td class="text-align:left"><p>Preview dialog</p></td>
+<td class="text-align:left"><p>Display a preview of the being created dialog</p></td>
+<td class="text-align:center"><p><span class="sphinx-bs badge badge-dark badge-pill">F2</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><img alt="Integrate icon" src="../_images/Integrate.png" /></p></td>
+<td class="text-align:left"><p>Integrate</p></td>
+<td class="text-align:left"><p>Save dialog to customer folder and display it in Jupiter’s ribbon</p></td>
+<td class="text-align:center"><p><span class="sphinx-bs badge badge-dark badge-pill">F3</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p><img alt="Help icon" src="../_images/Help.png" /></p></td>
+<td class="text-align:left"><p>Help</p></td>
+<td class="text-align:left"><p>Display a short tutorial (being created)</p></td>
+<td class="text-align:center"><p></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="tool-box-window">
+<h2>Tool Box Window<a class="headerlink" href="#tool-box-window" title="Permalink to this headline">¶</a></h2>
+<p>Contain all the components used to create dialogs and wizards.</p>
+<p><img alt="tool box window" src="../_images/GUI_CommandBuilder_MenuWindow_ToolBox.png" /></p>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>Icon</p></th>
+<th class="text-align:left head"><p>Name</p></th>
+<th class="text-align:left head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><img alt="Layout icon" src="../_images/Layout.png" /></p></td>
+<td class="text-align:left"><p>Layout</p></td>
+<td class="text-align:left"><p>Create a layout to arrange components inside</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><img alt="Group Box icon" src="../_images/GroupBox.png" /></p></td>
+<td class="text-align:left"><p>Group Box</p></td>
+<td class="text-align:left"><p>Create a group box which can contain some components</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p><img alt="Tab Control icon" src="../_images/TabControl.png" /></p></td>
+<td class="text-align:left"><p>Tab Control</p></td>
+<td class="text-align:left"><p>Create a tab container</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><img alt="Tab icon" src="../_images/TabItem.png" /></p></td>
+<td class="text-align:left"><p>Tab Item</p></td>
+<td class="text-align:left"><p>Create a tab inside the tab container</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p><img alt="Label icon" src="../_images/Label.png" /></p></td>
+<td class="text-align:left"><p>Label</p></td>
+<td class="text-align:left"><p>Create a label</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><img alt="Text Box icon" src="../_images/TextBox.png" /></p></td>
+<td class="text-align:left"><p>Text Box</p></td>
+<td class="text-align:left"><p>Create a text box</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p><img alt="Rich Edit Control icon" src="../_images/RichEditControl.png" /></p></td>
+<td class="text-align:left"><p>Rich Edit Control</p></td>
+<td class="text-align:left"><p>Create a text box that can be entered in various data formats and multiple lines</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><img alt="Combo Box icon" src="../_images/ComboBox.png" /></p></td>
+<td class="text-align:left"><p>Combo Box</p></td>
+<td class="text-align:left"><p>Create a combo box</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p><img alt="List Box icon" src="../_images/Listbox.png" /></p></td>
+<td class="text-align:left"><p>List Box</p></td>
+<td class="text-align:left"><p>Create a list box</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><img alt="Check box icon" src="../_images/Checkbox.png" /></p></td>
+<td class="text-align:left"><p>Check Box</p></td>
+<td class="text-align:left"><p>Create a check box</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p><img alt="Radio button icon" src="../_images/RadioButton.png" /></p></td>
+<td class="text-align:left"><p>Radio Button</p></td>
+<td class="text-align:left"><p>Create a radio button</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><img alt="Button icon" src="../_images/Button.png" /></p></td>
+<td class="text-align:left"><p>Button</p></td>
+<td class="text-align:left"><p>Create a button</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p><img alt="Image Control icon" src="../_images/ImageControl.png" /></p></td>
+<td class="text-align:left"><p>Image Control</p></td>
+<td class="text-align:left"><p>Create an image container</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><img alt="Spin icon" src="../_images/Spin.png" /></p></td>
+<td class="text-align:left"><p>Spin</p></td>
+<td class="text-align:left"><p>Create a spin button</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p><img alt="Slider bar icon" src="../_images/SliderBar.png" /></p></td>
+<td class="text-align:left"><p>Slider Bar</p></td>
+<td class="text-align:left"><p>Create a slide bar</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><img alt="Separator icon" src="../_images/Separator.png" /></p></td>
+<td class="text-align:left"><p>Separator</p></td>
+<td class="text-align:left"><p>Create a separator line</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p><img alt="Open File/Folder icon" src="../_images/OpenFileFolder.png" /></p></td>
+<td class="text-align:left"><p>Open File/Folder</p></td>
+<td class="text-align:left"><p>Create a open file/folder selection</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><img alt="Table icon" src="../_images/Table.png" /></p></td>
+<td class="text-align:left"><p>Table</p></td>
+<td class="text-align:left"><p>Create a table</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p><img alt="Page control icon" src="../_images/PageControl.png" /></p></td>
+<td class="text-align:left"><p>Page Control</p></td>
+<td class="text-align:left"><p>Create a page container (used for wizard)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><img alt="Page item icon" src="../_images/PageItem.png" /></p></td>
+<td class="text-align:left"><p>Page Item</p></td>
+<td class="text-align:left"><p>Create a page inside the page container (used for wizard)</p></td>
+</tr>
+</tbody>
+</table>
+<p>Below is the detail properties for each component:</p>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="hierrachy-window">
+<h2>Hierrachy Window<a class="headerlink" href="#hierrachy-window" title="Permalink to this headline">¶</a></h2>
+<p>All components in use are displayed in a tree format.
+User can change the position, duplicate or delete components.</p>
+<p><img alt="Hierrachy window" src="../_images/GUI_CommandBuilder_MenuWindow_Hierarchy.png" /></p>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>Icon</p></th>
+<th class="text-align:left head"><p>Name</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><img alt="Move out icon" src="../_images/Move_upperlevel.png" /></p></td>
+<td class="text-align:left"><p>Move item out of current container</p></td>
+<td><p>Move the selected component out of the current container which it is being belong to</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><img alt="Move into icon" src="../_images/Move_lowerlevel.png" /></p></td>
+<td class="text-align:left"><p>Move item into next container</p></td>
+<td><p>Move the selected component into the above container</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p><img alt="Move forward icon" src="../_images/Move_forward.png" /></p></td>
+<td class="text-align:left"><p>Move item forward one level</p></td>
+<td><p>Move the selected component up one level but still inside the current container</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><img alt="Move backward icon" src="../_images/Move_backward.png" /></p></td>
+<td class="text-align:left"><p>Move item backward one level</p></td>
+<td><p>Move the selected component down one level but still inside the current container</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p><img alt="Copy icon" src="../_images/Copy_insert.png" /></p></td>
+<td class="text-align:left"><p>Copy item and insert it</p></td>
+<td><p>Duplicate the selected component</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><img alt="Delete icon" src="../_images/Delete.png" /></p></td>
+<td class="text-align:left"><p>Delete selected item</p></td>
+<td><p>Delete the selected component</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="properties-window">
+<h2>Properties Window<a class="headerlink" href="#properties-window" title="Permalink to this headline">¶</a></h2>
+<p>Display all properties of the selected component.
+The settings of the dialog created can also be set from the Properties window.
+By selecting a component in the Hierarchy window, user can change its parameters in this Properties window.</p>
+<p><img alt="Properties window" src="../_images/GUI_CommandBuilder_MenuWindow_Properties.png" /></p>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+        <p class="logo"><a href="../get_started.html" title="get_started">
+          <img class="logo" src="../_static/logo.png" alt="Logo"/>
+        </a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+<div class="sphinx-toc sphinxglobaltoc">
+<h3><a href="../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../get_started.html">Get started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../what_new.html">What’s new</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../data_type/index.html">Data Type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../python_API_window.html">Python API Window</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../IDE.html">IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../file_launcher.html">File Launcher</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">GUI Command Builder</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#tool-menu">Tool Menu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tool-box-window">Tool Box Window</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="component/index.html">Component and Parameter</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#hierrachy-window">Hierrachy Window</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#properties-window">Properties Window</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h3>Versions</h3>
+<ul>
+    <li><a href="../../master/index.html">master</a></li>
+    <li><a href="index.html">v4.1.4</a></li>
+    <li><a href="../../v5.0/index.html">v5.0</a></li>
+</ul>
+        </div>
+      </div>
+    
+    
+        <div class="sidebar-toggle-group no-js">
+            
+            <button class="sidebar-toggle" id="sidebar-hide" title="Hide the sidebar menu">
+                 «
+                <span class="show-for-small">hide menu</span>
+                
+            </button>
+            <button class="sidebar-toggle" id="sidebar-show" title="Show the sidebar menu">
+                
+                <span class="show-for-small">menu</span>
+                <span class="hide-for-small">sidebar</span>
+                 »
+            </button>
+        </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="relbar-bottom">
+        
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../index.html" title="Table Of Contents"
+             >toc</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="component/index.html" title="Component and Parameter"
+             >next</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="../file_launcher.html" title="File Launcher"
+             >previous</a> &nbsp; &nbsp;</li>
+    <li><a href="../get_started.html">Python Script in Jupiter</a> &#187;</li>
+
+        <li class="nav-item nav-item-this"><a href="">GUI Command Builder</a></li> 
+      </ul>
+    </div>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2002-2020, TechnoStar Co. Ltd.
+    </div>
+    <!-- cloud_sptheme 1.4 -->
+  </body>
+</html>
