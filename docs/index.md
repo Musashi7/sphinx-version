@@ -1,4 +1,4 @@
-# Python Script in Jupiter (PSJ)
+# Python Script in Jupiter (PSJ) Release
 
 Learn the basics and discover the customizaton tool.
 
