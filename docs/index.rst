@@ -1,4 +1,0 @@
-Test
-====
-
-Sample Documentation Master

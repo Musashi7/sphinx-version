@@ -1,0 +1,15 @@
+{# Import the theme's layout. #}
+{% extends '!layout.html' %}
+
+{%- block extrahead %}
+{# Call the parent block #}
+{{ super() }}
+
+<script type="text/javascript" src="{{ pathto('_static/javascript/jquery.min.js', 1) }}"></script>
+<script type="text/javascript" src="{{ pathto('_static/javascript/jquery.maphilight.min.js', 1) }}"></script>
+<script type="text/javascript">
+   $(function () {
+       $('.map').maphilight();
+   });
+</script>
+{%- endblock %}
