@@ -5,6 +5,9 @@ from recommonmark.parser import CommonMarkParser
 project = "Python Scritping in Jupiter"
 author = "TechnoStar Co. Ltd"
 copyright = "2002-2020, " + author
+scv_greatest_tag = True
+scv_banner_greatest_tag = True
+scv_show_banner = True
 
 # -- General configuration ---------------------------------------------------
 # Add any Sphinx extension module names here, as strings. They can be
