@@ -1,0 +1,29 @@
+# Component and Parameter
+
+This section contains the detailed settings for GUI Command Builder:
+
+```{toctree}
+:maxdepth: 3
+
+GUI_CommandBuilder_Component-Parameter_Dialog.md
+GUI_CommandBuilder_Component-Parameter_Layout.md
+GUI_CommandBuilder_Component-Parameter_GroupBox.md
+GUI_CommandBuilder_Component-Parameter_TabCtrl.md
+GUI_CommandBuilder_Component-Parameter_TabItem.md
+GUI_CommandBuilder_Component-Parameter_Label.md
+GUI_CommandBuilder_Component-Parameter_TextBox.md
+GUI_CommandBuilder_Component-Parameter_RichEditCtrl.md
+GUI_CommandBuilder_Component-Parameter_ComboBox.md
+GUI_CommandBuilder_Component-Parameter_ListBox.md
+GUI_CommandBuilder_Component-Parameter_CheckBox.md
+GUI_CommandBuilder_Component-Parameter_RadioButton.md
+GUI_CommandBuilder_Component-Parameter_Button.md
+GUI_CommandBuilder_Component-Parameter_ImageCtrl.md
+GUI_CommandBuilder_Component-Parameter_Spin.md
+GUI_CommandBuilder_Component-Parameter_SliderBar.md
+GUI_CommandBuilder_Component-Parameter_Separator.md
+GUI_CommandBuilder_Component-Parameter_OpenFile_Folder.md
+GUI_CommandBuilder_Component-Parameter_Table.md
+GUI_CommandBuilder_Component-Parameter_PageCtrl.md
+GUI_CommandBuilder_Component-Parameter_PageItem.md
+```

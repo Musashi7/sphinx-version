@@ -1,0 +1,273 @@
+div.sphinxsidebarwrapper
+{
+    padding: 1em 0 0 10px;
+}
+
+div.sphinxsidebar h3,
+div.sphinxsidebar h4
+{
+    padding: 0;
+    margin: 24px 16px 0 0;
+    font-weight: normal;
+    color: #777777;
+}
+
+div.sphinxsidebar h3 { font-size: 1.4em; }
+div.sphinxsidebar h4 { font-size: 1.3em; }
+
+div.sphinxsidebar h3 a,
+div.sphinxsidebar h4 a
+{
+    color: #777777;
+}
+
+div.sphinxsidebar p
+{
+    color: #777777;
+}
+
+div.sphinxsidebar p.topless
+{
+    margin: 5px 10px 10px 10px;
+}
+
+div.sphinxsidebar ul
+{
+    margin: 10px;
+    margin-right: 0;
+    padding: 0;
+    color: #777777;
+}
+
+div.sphinxsidebar a
+{
+    color: #003469;
+    border: 1px solid transparent;
+    border-width: 1px 0;
+}
+
+div.sphinxsidebar a:hover
+{
+    color: #d39110;
+    background: #fff9e4;
+    border-color: #F8D186;
+    text-decoration: none;
+}
+
+div.sphinxsidebar ul li a
+{
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+div.sphinxsidebar ul li a:hover
+{
+    
+    display: inline-table;
+    min-width: 98%;
+    min-width: calc(100% - 5px);
+    
+}
+
+div.sphinxsidebar a:active
+{
+    color: #777777;
+}
+
+div.sphinxsidebar p.logo
+{
+    margin: 1em 0 0 -10px;
+    text-align: center;
+    max-width: 100%;
+}
+
+div.sphinxsidebar p.logo a
+{
+    display: inline-block;
+	-moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+}
+
+
+div.sphinxsidebarwrapper > h3:first-child,
+div.sphinxsidebarwrapper > h4:first-child,
+div.sphinxsidebarwrapper > div:first-child > h3:first-child,
+div.sphinxsidebarwrapper > div:first-child > h4:first-child
+{
+    margin-top: .2em;
+}
+
+div.sphinxsidebar ul,
+div.sphinxsidebar ul ul,
+div.sphinxprev p.topless,
+div.sphinxnext p.topless
+{
+    list-style: none;
+    margin-left: 0;
+}
+
+div.sphinxsidebar ul ul
+{
+    margin-left: 1.5em;
+}
+
+div.sphinxsidebar ul a,
+div.sphinxprev a,
+div.sphinxnext a
+{
+    position: relative;
+    display: block;
+    padding: 1px 4px 3px 5px;
+    margin: 0 5px 0 0;
+    border: 1px solid transparent;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -o-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+}
+
+div.sphinxsidebar ul a:hover,
+div.sphinxprev a:hover,
+div.sphinxnext a:hover
+{
+    background: #fff9e4;
+    border-color: #F8D186;
+    color: #d39110;
+    text-decoration: none;
+}
+
+    
+div.sphinx-toc ul a:not([href^="#"]):hover
+{
+    position: relative;
+    overflow: visible; 
+}
+
+div.sphinx-toc ul a:not([href^="#"]):hover:before
+{
+    content: "▶";
+    position: absolute;
+    right: 100%;
+    font-size: 1em;
+    margin-right: 4px;
+    opacity: 0.7;
+}
+
+div.sphinxglobaltoc ul a[href="#"]
+{
+    font-weight: bold;
+	font-style: normal;
+}
+
+div.sphinxglobaltoc ul a:not([href*="#"])
+{
+    font-size: 1em;
+    font-weight: bold;
+	font-style: normal;
+}
+
+div.sphinx-toc li
+{
+    position: relative;
+}
+
+div.sphinx-toc li:before
+{
+    position: absolute;
+    left: -0.8em;
+    color: #d39110;
+}
+
+div.sphinx-toc li.current.active:not(.focus):before
+{
+    content: "▼";
+    top: 0.1em;
+    opacity: 0.5;
+}
+
+div.sphinx-toc li.focus.local:before
+{
+    content: "▶";
+    opacity: 0.7;
+}
+
+    
+div.sphinx-toc > ul:not(:hover) li.focus.child:before
+{
+    content: "▶";
+    opacity: 0.5;
+    font-size: 1.5em;
+    margin-left: -4px;
+}
+
+div.sphinx-toc li.focus.local > a:not(:hover)
+{
+    color: #d39110;
+}
+
+div.sphinx-toc li.toc-toggle > a:after
+{
+    content: "[–]";
+    padding-left: .25em;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=
+    50);
+    opacity: 0.5;
+
+}
+
+div.sphinx-toc li.toc-toggle.closed > a:after
+{
+    content: "[+]";
+}
+
+div.sphinxsidebar h3,
+div.sphinxsidebar h4
+{
+	font-family: "Open Sans", sans-serif;
+}
+
+div.body h1
+{
+    font-family: "Open Sans", sans-serif;
+	font-weight: bold;
+	color: #001C57;
+	font-size: 2.2em;
+}
+
+div.body p.rubric,
+div.body h3,
+div.body h4,
+div.body h5,
+div.body h6
+{
+    font-family: "Open Sans", sans-serif;
+	font-weight: bold;
+}
+
+div.body h2
+{
+    font-family: "Open Sans", sans-serif;
+	font-weight: bold;
+	color: #001C57;
+	font-size: 1.6em;
+	color: #FFFFFF;
+}
+
+table.docutils th {
+    font-family: "Open Sans", sans-serif;
+}
+
+div.body > .section > h1
+{
+    margin: 0;
+}
+
+div.body h2,
+.section.emphasize-children > .section > h3
+{
+    padding: 0px 10px;
+}

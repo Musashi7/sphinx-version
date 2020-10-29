@@ -1,0 +1,290 @@
+
+
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Box &#8212; Python Scritping in Jupiter  documentation</title>
+    <link rel="stylesheet" href="../../_static/cloud.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx_tabs/semantic-ui-2.4.1/segment.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx_tabs/semantic-ui-2.4.1/menu.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx_tabs/semantic-ui-2.4.1/tab.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx_tabs/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/jupyter-sphinx.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/thebelab.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/banner.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/stylesheets/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/spanels-index--0afa1ebdab0bb23b98b56d34c23d9f57.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/spanels-bootstrap-index--5fd3999ee7762ccc51105388f4a9d115.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/spanels-variables--ffc7f74dcb1b9eecba2dbcbc22818714.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/table_styling.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noticia+Text:400,i,b,bi|Open+Sans:400,i,b,bi|Roboto+Mono:400,i,b,bi&amp;display=swap" type="text/css" />
+    
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/thebelab-helper.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+
+    
+    
+     
+        <script src="../../_static/jquery.cookie.js"></script>
+    
+
+    
+     
+        <script src="../../_static/cloud.base.js"></script>
+    
+
+    
+     
+        <script src="../../_static/cloud.js"></script>
+    
+
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Rich Edit Control" href="GUI_CommandBuilder_Component-Parameter_RichEditCtrl.html" />
+    <link rel="prev" title="Label" href="GUI_CommandBuilder_Component-Parameter_Label.html" /> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head><body>
+    <div class="relbar-top">
+        
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../../index.html" title="Table Of Contents"
+             accesskey="C">toc</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="GUI_CommandBuilder_Component-Parameter_RichEditCtrl.html" title="Rich Edit Control"
+             accesskey="N">next</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="GUI_CommandBuilder_Component-Parameter_Label.html" title="Label"
+             accesskey="P">previous</a> &nbsp; &nbsp;</li>
+    <li><a href="../../get_started.html">Python Script in Jupiter</a> &#187;</li>
+
+          <li class="nav-item nav-item-1"><a href="../index.html" >GUI Command Builder</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" accesskey="U">Component and Parameter</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Text Box</a></li> 
+      </ul>
+    </div>
+    </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="text-box">
+<h1>Text Box<a class="headerlink" href="#text-box" title="Permalink to this headline">¶</a></h1>
+<p>Create a text box.</p>
+<p><img alt="" src="../../_images/GUI_CommandBuilder_Component-Parameter_TextBox.png" /></p>
+<p>Preview dialog:</p>
+<p><img alt="" src="../../_images/GUI_CommandBuilder_Component-Parameter_TextBox2.png" /></p>
+<div class="section" id="parameters">
+<h2>Parameters<a class="headerlink" href="#parameters" title="Permalink to this headline">¶</a></h2>
+<p><strong>Default</strong></p>
+<p>Enter the text that is displayed by default.</p>
+<p><strong>Align</strong></p>
+<p>Specify the display position of the text inside the box.</p>
+<ul class="simple">
+<li><p><strong>Left</strong> : Left alignment</p></li>
+<li><p><strong>Right</strong> : Right align</p></li>
+<li><p><strong>Center</strong> : Center align</p></li>
+</ul>
+<p><strong>ReadOnly</strong></p>
+<ul class="simple">
+<li><p><strong>Check On</strong> : Text cannot be edited. (copying is possible.)</p></li>
+<li><p><strong>Check Off</strong> : Text can be edited.</p></li>
+</ul>
+<p><strong>Name</strong></p>
+<p>Enter the name of the text box component.</p>
+<p><strong>Width</strong></p>
+<p>Specify the minimum width of the text box. (in pixels)</p>
+<p><strong>Height</strong></p>
+<p>Specify minimum height of the text box. (in pixels)</p>
+<p><strong>Type</strong></p>
+<p>Specify the data type that can be entered into the text box (for validation).</p>
+<ul class="simple">
+<li><p><strong>String</strong> : string type</p></li>
+<li><p><strong>Double</strong> : double precision floating point number type</p></li>
+<li><p><strong>Integer</strong> : integer type</p></li>
+</ul>
+<p><strong>Enable</strong></p>
+<p>Specify whether to enable it or not.</p>
+<ul class="simple">
+<li><p><strong>Check On</strong> : Available</p></li>
+<li><p><strong>Check Off</strong> : Unavailable (grayed out)</p></li>
+</ul>
+</div>
+<div class="section" id="command-to-use">
+<h2>Command to use<a class="headerlink" href="#command-to-use" title="Permalink to this headline">¶</a></h2>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Sample Code</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>dlg.set_item_text(“component name”,”text”)</p></td>
+<td><p>Set the text displayed in the text box</p></td>
+<td><p><em>Input:</em><br><code class="docutils literal notranslate"><span class="pre">dlg.set_item_text(&quot;Item&quot;,</span> <span class="pre">&quot;text&quot;)</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>dlg.get_item_text(“component name”)</p></td>
+<td><p>Get the text displayed in the text box</p></td>
+<td><p><em>Input:</em><br><code class="docutils literal notranslate"><span class="pre">dlg.get_item_text(&quot;TextBox&quot;)</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+        <p class="logo"><a href="../../get_started.html" title="get_started">
+          <img class="logo" src="../../_static/logo.png" alt="Logo"/>
+        </a></p>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+<div class="sphinx-toc sphinxglobaltoc">
+<h3><a href="../../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../get_started.html">Get started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../what_new.html">What’s new</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/index.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../data_type/index.html">Data Type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../python_API_window.html">Python API Window</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../IDE.html">IDE</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../file_launcher.html">File Launcher</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">GUI Command Builder</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../index.html#tool-menu">Tool Menu</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html#tool-box-window">Tool Box Window</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="index.html">Component and Parameter</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="GUI_CommandBuilder_Component-Parameter_Dialog.html">Dialog</a></li>
+<li class="toctree-l4"><a class="reference internal" href="GUI_CommandBuilder_Component-Parameter_Layout.html">Layout</a></li>
+<li class="toctree-l4"><a class="reference internal" href="GUI_CommandBuilder_Component-Parameter_GroupBox.html">Group Box</a></li>
+<li class="toctree-l4"><a class="reference internal" href="GUI_CommandBuilder_Component-Parameter_TabCtrl.html">Tab Control</a></li>
+<li class="toctree-l4"><a class="reference internal" href="GUI_CommandBuilder_Component-Parameter_TabItem.html">Tab Item</a></li>
+<li class="toctree-l4"><a class="reference internal" href="GUI_CommandBuilder_Component-Parameter_Label.html">Label</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Text Box</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#parameters">Parameters</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#command-to-use">Command to use</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="GUI_CommandBuilder_Component-Parameter_RichEditCtrl.html">Rich Edit Control</a></li>
+<li class="toctree-l4"><a class="reference internal" href="GUI_CommandBuilder_Component-Parameter_ComboBox.html">Combo Box</a></li>
+<li class="toctree-l4"><a class="reference internal" href="GUI_CommandBuilder_Component-Parameter_ListBox.html">List Box</a></li>
+<li class="toctree-l4"><a class="reference internal" href="GUI_CommandBuilder_Component-Parameter_CheckBox.html">Check Box</a></li>
+<li class="toctree-l4"><a class="reference internal" href="GUI_CommandBuilder_Component-Parameter_RadioButton.html">Radio Button</a></li>
+<li class="toctree-l4"><a class="reference internal" href="GUI_CommandBuilder_Component-Parameter_Button.html">Button</a></li>
+<li class="toctree-l4"><a class="reference internal" href="GUI_CommandBuilder_Component-Parameter_ImageCtrl.html">Image Control</a></li>
+<li class="toctree-l4"><a class="reference internal" href="GUI_CommandBuilder_Component-Parameter_Spin.html">Spin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="GUI_CommandBuilder_Component-Parameter_SliderBar.html">Slider Bar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="GUI_CommandBuilder_Component-Parameter_Separator.html">Separator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="GUI_CommandBuilder_Component-Parameter_OpenFile_Folder.html">Open File/Folder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="GUI_CommandBuilder_Component-Parameter_Table.html">Table</a></li>
+<li class="toctree-l4"><a class="reference internal" href="GUI_CommandBuilder_Component-Parameter_PageCtrl.html">Page Control</a></li>
+<li class="toctree-l4"><a class="reference internal" href="GUI_CommandBuilder_Component-Parameter_PageItem.html">Page Item</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#hierrachy-window">Hierrachy Window</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#properties-window">Properties Window</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<h3>Versions</h3>
+<ul>
+    <li><a href="../../../master/index.html">master</a></li>
+    <li><a href="GUI_CommandBuilder_Component-Parameter_TextBox.html">v4.1.4</a></li>
+</ul>
+        </div>
+      </div>
+    
+    
+        <div class="sidebar-toggle-group no-js">
+            
+            <button class="sidebar-toggle" id="sidebar-hide" title="Hide the sidebar menu">
+                 «
+                <span class="show-for-small">hide menu</span>
+                
+            </button>
+            <button class="sidebar-toggle" id="sidebar-show" title="Show the sidebar menu">
+                
+                <span class="show-for-small">menu</span>
+                <span class="hide-for-small">sidebar</span>
+                 »
+            </button>
+        </div>
+    
+      <div class="clearer"></div>
+    </div>
+    <div class="relbar-bottom">
+        
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../../index.html" title="Table Of Contents"
+             >toc</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="GUI_CommandBuilder_Component-Parameter_RichEditCtrl.html" title="Rich Edit Control"
+             >next</a> &nbsp; &nbsp;</li>
+        <li class="right" >
+          <a href="GUI_CommandBuilder_Component-Parameter_Label.html" title="Label"
+             >previous</a> &nbsp; &nbsp;</li>
+    <li><a href="../../get_started.html">Python Script in Jupiter</a> &#187;</li>
+
+          <li class="nav-item nav-item-1"><a href="../index.html" >GUI Command Builder</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="index.html" >Component and Parameter</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Text Box</a></li> 
+      </ul>
+    </div>
+    </div>
+
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2002-2020, TechnoStar Co. Ltd.
+    </div>
+    <!-- cloud_sptheme 1.4 -->
+  </body>
+</html>
